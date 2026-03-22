@@ -1,0 +1,11 @@
+.login{
+    display: flex;
+}
+.login li{
+    margin-left: 25px;
+    list-style-type: none;
+}
+.login li a{
+    color: blue;
+    text-decoration: none;
+}
