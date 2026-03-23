@@ -1,0 +1,14 @@
+/*SSR- server side rendering.
+This is default behavior 
+
+SSG- Static side generation
+Any content which does not have network call in a static page by default.
+
+ISG or ISR - Incermental side regeneration
+fetch in next.js caches the response 
+However, there are expections , fetch request are not cached when :
+
+.Used inside a server action
+.Used inside a route handler that uses the POST method.
+
+*/

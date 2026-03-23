@@ -9,11 +9,11 @@ export function proxy(req: NextRequest) {
         return NextResponse.next();
     }
     // Redirect all other routes
-    return NextResponse.redirect(new URL("/login", req.url))
+    // return NextResponse.redirect(new URL("/login", req.url))
 
 }
 
 export const config = {
-    matcher: ['/about/aboutcollege/:path*','/study/:path*','/1/:path*','/text/:path*'],
+    // matcher: ['/about/aboutcollege/:path*','/study/:path*','/1/:path*','/text/:path*'],
 
 }
