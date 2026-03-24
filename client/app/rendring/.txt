@@ -1,0 +1,61 @@
+Compare with CSR (your previous code)
+CSR
+1. Page loads
+2. Shows "Loading..."
+3. Fetch runs in browser
+4. UI updates
+SSR (this code)
+1. Request page
+2. Server fetches data
+3. Page already filled with data
+4. No loading state needed
+
+🍽️ Real-life analogy
+SSR
+
+You sit at restaurant → food already on table 🍽️
+
+CSR
+
+You sit → order → wait → food comes later ⏳
+
+🔥 Key insight (VERY IMPORTANT)
+
+👉 In App Router:
+
+Async component = Server component = SSR
+
+You don’t need:
+
+❌ useEffect
+❌ useState
+❌ getServerSideProps
+
+Why no loading state here?
+
+Because:
+
+👉 Data is already fetched before rendering
+
+So user never sees empty UI.
+
+🧠 One-line understanding
+
+Server fetches data → builds UI → sends ready page
+
+🚀 Pro-level understanding
+
+You now know:
+
+CSR → browser fetch
+SSR → server fetch
+App Router → fetch directly in component
+
+
+⚖️ CSR vs SSR
+| Feature            | CSR     | SSR        |
+| ------------------ | ------- | ---------- |
+| Speed (first load) | Slower  | Faster     |
+| SEO                | Poor    | Excellent  |
+| Loading state      | Needed  | Not needed |
+| Where fetch runs   | Browser | Server     |
