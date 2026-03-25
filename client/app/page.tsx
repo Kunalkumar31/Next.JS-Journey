@@ -38,6 +38,9 @@ const HomePage = () => {
 
          <h1 className='text-3xl text-center'>Fetch Data with API in client component </h1>
          <Link className='text-blue-400 border-3 rounded' href="/productlist">Go to product list</Link>
+
+         <h1 className='text-3xl text-center'>Fetch Data with API in Server component </h1>
+         <Link className='text-blue-400 border-3 rounded' href="/productlist2">Go to product list</Link>
          
     </div>
   )
