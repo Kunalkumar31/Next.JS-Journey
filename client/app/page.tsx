@@ -1,17 +1,12 @@
 "use client"
 import React from 'react'
-// import Link from 'next/link'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Route } from 'next'
-
-
-
 
 interface UserProps {
   name: string
 }
-
-
 
 const HomePage = () => {
   const router = useRouter();
@@ -40,6 +35,10 @@ const HomePage = () => {
       <button className='m-2 p-2 border-4 rounded cursor-pointer' onClick={() => { navigate("/2") }}>Go to 2</button>
       <button className='m-2 p-2 border-4 rounded cursor-pointer' onClick={() => { navigate("/login") }}> Login Page</button>
       <button className='m-2 p-2 border-4 rounded cursor-pointer' onClick={() => { navigate("/about") }}>Go to About</button>
+
+         <h1 className='text-3xl text-center'>Fetch Data with API in client component </h1>
+         <Link className='text-blue-400 border-3 rounded' href="/productlist">Go to product list</Link>
+         
     </div>
   )
 }
@@ -49,7 +48,7 @@ const User = (props: UserProps) => {
   return (
     <div>
       <h2 className='text-2xl border-2 m-2.5 p-2 rounded'>User name is: {props.name}</h2>
+
     </div>
   )
 }
-
