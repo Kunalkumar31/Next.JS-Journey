@@ -36,12 +36,12 @@ const HomePage = () => {
       <button className='m-2 p-2 border-4 rounded cursor-pointer' onClick={() => { navigate("/login") }}> Login Page</button>
       <button className='m-2 p-2 border-4 rounded cursor-pointer' onClick={() => { navigate("/about") }}>Go to About</button>
 
-         <h1 className='text-3xl text-center'>Fetch Data with API in client component </h1>
-         <Link className='text-blue-400 border-3 rounded' href="/productlist">Go to product list</Link>
+      <h1 className='text-3xl text-center'>Fetch Data with API in client component </h1>
+      <Link className='text-blue-400 border-3 rounded' href="/productlist-1">Go to product lis-1</Link>
 
-         <h1 className='text-3xl text-center'>Fetch Data with API in Server component </h1>
-         <Link className='text-blue-400 border-3 rounded' href="/productlist2">Go to product list</Link>
-         
+      <h1 className='text-3xl text-center'>Fetch Data with API in Server component </h1>
+      <Link className='text-blue-400 border-3 rounded' href="/productlist-2">Go to product list-2</Link>
+
     </div>
   )
 }
