@@ -14,14 +14,14 @@ export default async function Page() {
     const products = await productlist();
     console.log(products);
     return (
-        <div>
-            <h1 className="text-3xl">Product List</h1>
+        <div className="w-full border-3 bg-gray-950 box-border p-5">
+            <h1 className="text-4xl text-center text-blue-600 uppercase ">Product List</h1>
             {
                 products.map((item) => (
                     <div key={item.id}>
-                        <h1>
-                            {item.id}
-                            {item.title}
+                        <h1 className=" border-2  m-5 text-2xl ">
+                            <span className="m-2 text-blue-600">{item.id}</span>
+                            <span className="m-1  text-green-600">  {item.title}</span>
                         </h1>
                     </div>
                 ))
