@@ -18,10 +18,10 @@ export default async function Page() {
             <h1 className="text-4xl text-center text-blue-600 uppercase ">Product List</h1>
             {
                 products.map((item) => (
-                    <div key={item.id}>
-                        <h1 className=" border-2  m-5 text-2xl ">
-                            <span className="m-2 text-blue-600">{item.id}</span>
-                            <span className="m-1  text-green-600">  {item.title}</span>
+                    <div className="p-2" key={item.id}>
+                        <h1 className="  m-2 text-2xl outline-2 outline-offset-2 outline-gray-400 ">
+                            <span className="m-2 text-blue-600">{item.id}.</span>
+                            <span className="m-1  text-green-600">{item.title}</span>
                         </h1>
                     </div>
                 ))
