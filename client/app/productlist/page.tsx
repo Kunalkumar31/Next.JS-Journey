@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react"
+import NewProduct from "./Newproduct";
 
 type Product = {
     id: number;
@@ -46,10 +47,13 @@ export default function Page() {
                 product.map((item) => (
                     <h2 className="border-2 p-3 bg-amber-600 text-2xl" key={item.id}> Product List
                         <span className="m-2">{item.id}</span> -{" "}
-                        <span>{item.title}</span> - ₹{item.price}
+                        <span>{item.title} </span> - ₹{item.price}
+                        <NewProduct price={item.price} />
+
                     </h2>
                 ))
             }
+
         </div>
     )
 }
