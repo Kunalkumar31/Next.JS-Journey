@@ -21,7 +21,7 @@ const HomePage = () => {
       <User name="Shyam" />
       <User name="Mohan" />
       <User name="Rani" />
-      <h1 className='text-center text-3xl bg-amber-500'>HomePage</h1>
+      <h1 className='text-center text-3xl bg-amber-500 text-black'>HomePage</h1>
       {/* <Link href="/1">Go to 1 page</Link> */}
       <br />
       {/* <Link href="/2">Go to 2 page</Link> */}
@@ -42,6 +42,7 @@ const HomePage = () => {
       <h1 className='text-3xl text-center'>Fetch Data with API in Server component </h1>
       <Link className='text-blue-400 border-3 rounded' href="/productlist2">Go to product list-2</Link>
 
+     
     </div>
   )
 }
