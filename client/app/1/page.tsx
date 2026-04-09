@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
+import custom from "@/app/custom.module.css"
 const Home = () => {
     const apple = () => {
         alert("Fruits");
@@ -15,6 +16,7 @@ const Home = () => {
             <button className='text-center border-2 rounded-2xl cursor-pointer m-2 p-2' onClick={apple}>Click Me 2</button>
             <button className='text-center border-2 rounded-2xl cursor-pointer m-2 p-2' onClick={() => Newapple("Fruits")}>Click Me 3</button>
             <Link href="/">Go To HomePage</Link>
+            <h1 className={custom.heading}>Text Module CSS</h1>
         </div>
     )
 }
