@@ -1,7 +1,7 @@
 "use client"
 import { Route } from 'next';
 import Image from 'next/image'
-import profile from "@/public/next.svg"
+// import profile from "@/public/next.svg"
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 const Home = () => {
@@ -21,15 +21,19 @@ const Home = () => {
             <InnerComponent />
 
             <button onClick={() => { naviagte("/") }} className='p-2 m-2  border-2 rounded cursor-pointer'>Go to HomePage</button>
-{/* 
+            {/* 
             <Image
                 src={profile}
                 alt="Profile-img"
             /> */}
-            <Image
+            <Image 
                 src="https://images.pexels.com/photos/17541770/pexels-photo-17541770.jpeg"
                 width={400}
-                height={400} alt={''}             />
+                height={400} alt={''} />
+                <h2 style={{fontFamily:'roboto', fontWeight:'100'}} className='text-4xl text-center'>Font optimization</h2>
+                <h2 className='text-4xl text-center'>Font optimization</h2>
+                
+                
         </div>
     )
 }
