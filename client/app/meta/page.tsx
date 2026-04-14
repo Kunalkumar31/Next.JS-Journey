@@ -9,7 +9,7 @@ export default function Meta(){
 
  export async function generateMetadata() {
    return {
-     title: "User page tittle",
+     title: "User page title",
      description:"User-Page"
    }
  }
