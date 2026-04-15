@@ -1,0 +1,45 @@
+/* Center container */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a; /* dark modern bg */
+}
+
+/* Modern Loader */
+.loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #3b82f6,
+    #06b6d4,
+    #22c55e,
+    #eab308,
+    #ef4444,
+    #3b82f6
+  );
+  animation: spin 1s linear infinite;
+  position: relative;
+}
+
+/* Inner circle (glass effect) */
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  background: #0f172a;
+  border-radius: 50%;
+}
+
+/* Animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
