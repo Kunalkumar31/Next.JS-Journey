@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Outfit, Roboto } from "next/font/google";
 import "./globals.css";
+import style from "../public/new.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +23,7 @@ const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
-  display:'swap'
+  display: 'swap'
 });
 
 export const metadata: Metadata = {
@@ -30,16 +32,26 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-return (
-  <html lang="en">
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${roboto.variable} antialiased`}
-    >
+  return (
+    <html lang="en">
+      <head>
+        <link rel="stylesheet" href={style} />
+     
+    
+       
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${roboto.variable} antialiased`}
+      >
+       
         <h1 className="text-center text-2xl">Comman Layout</h1>
+       
+      
         {children}
       </body>
     </html>
